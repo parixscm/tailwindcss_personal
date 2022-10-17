@@ -15,9 +15,9 @@ function App() {
           <span>Total</span>
           <span className="font-semibold">$970</span>
         </div>
-        <div className="mt-5 p-3 bg-blue-500 rounded-xl text-white text-center mx-auto w-1/2">
+        <button className="mt-5 p-3 bg-blue-500 rounded-xl text-white text-center mx-auto block w-3/4 hover:bg-teal-500 hover:text-black active:bg-yellow-500 focus:bg-red-500">
           Checkout
-        </div>
+        </button>
       </div>
 
       <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
@@ -59,10 +59,10 @@ function App() {
           <span className="font-medium text-xl">Swoon Lounge</span>
           <span className="text-xs text-gray-500">Chair</span>
           <div className="mt-3 mb-5 flex justify-between items-center">
-            <div>
-              <button></button>
-              <button></button>
-              <button></button>
+            <div className="space-x-2">
+              <button className="w-5 h-5 bg-yellow-500 rounded-full"></button>
+              <button className="w-5 h-5 bg-indigo-500 rounded-full"></button>
+              <button className="w-5 h-5 bg-teal-500 rounded-full"></button>
             </div>
             <div className="flex items-center space-x-5">
               <button className="bg-blue-200 flex justify-center items-center rounded-lg aspect-square w-8 text-xl text-gray-500">
