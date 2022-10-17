@@ -19,6 +19,30 @@ function App() {
           Checkout
         </div>
       </div>
+
+      <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div className="bg-blue-500 p-6 pb-14">
+          <span className="text-white text-2xl">Profile</span>
+        </div>
+
+        <div className="p-6 rounded-3xl relative -top-5 bg-white">
+          <div className="flex justify-between items-end relative -top-16">
+            <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-500">Orders</span>
+              <span className="font-medium">340</span>
+            </div>
+            <div className="w-24 h-24 bg-red-400 rounded-full" />
+            <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-500">Spent</span>
+              <span className="font-medium">$2,310</span>
+            </div>
+          </div>
+          <div className="-mt-10 -mb-5 flex flex-col items-center">
+            <span className="text-lg font-medium">Tony Molloy</span>
+            <span className="text-sm text-gray-500"> New York, USA</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
