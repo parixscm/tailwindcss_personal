@@ -133,6 +133,37 @@ function App() {
         </span>
         <input type="submit" value="Login" className="bg-white" />
       </form>
+
+      <div className="flex flex-col space-y-2 p-5 bg-blue-500">
+        <span className="selection:bg-indigo-500 selection:text-white">
+          Hello World
+        </span>
+        <details className="select-none open:text-white open:bg-indigo-400">
+          <summary className="cursor-pointer">
+            What is my favorite food?
+          </summary>
+          <span>김치</span>
+        </details>
+      </div>
+
+      <div className="flex flex-col space-y-2 p-5 bg-white">
+        <ul className="list-decimal marker:text-teal-500">
+          <li>hi</li>
+          <li>hi</li>
+          <li>hi</li>
+        </ul>
+        // file: 명시하지 않으면 더 많은 영역이 칠해진다.
+        <input
+          type="file"
+          className="file:transition-colors file:cursor-pointer file:hover:text-white file:hover:bg-blue-500 file:border-0 file:rounded-xl file:px-5 file:text-blue-500"
+        />
+      </div>
+
+      <div className="flex flex-col space-y-2 p-5 bg-white">
+        <p className="first-letter:text-7xl first-letter:hover:text-indigo-400">
+          Hello Everyone!
+        </p>
+      </div>
     </div>
   );
 }
