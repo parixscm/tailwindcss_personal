@@ -3,14 +3,22 @@ function App() {
     <div className="bg-slate-400 py-20 px-10 flex flex-col space-y-5 min-h-screen">
       <div className="bg-white p-6 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
-        <div className="flex justify-between my-2">
-          <span className="text-gray-500">Blue Curtain</span>
-          <span className="font-semibold">$170</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-gray-500">Grey Sofa</span>
-          <span className="font-semibold">$800</span>
-        </div>
+        <ul>
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div
+              key={i}
+              className="flex justify-between odd:bg-blue-50 even:bg-yellow-50"
+            >
+              <span className="text-gray-500">Grey Sofa</span>
+              <span className="font-semibold">$800</span>
+            </div>
+          ))}
+        </ul>
+        {["a", "b", "c", ""].map((c, i) => (
+          <li className="list-none bg-red-300 py-2 empty:hidden" key={i}>
+            {c}
+          </li>
+        ))}
         <div className="flex justify-between mt-2 pt-2 border-t-2 border-dashed">
           <span>Total</span>
           <span className="font-semibold">$970</span>
