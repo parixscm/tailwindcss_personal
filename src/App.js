@@ -1,23 +1,25 @@
 function App() {
   return (
     <div className="bg-slate-400 laptop:place-content-center py-20 px-10 grid gap-10 tablet:grid-cols-2 laptop:grid-cols-3 min-h-screen">
-      <div className="flex flex-col justify-between bg-white tablet:bg-teal-400 laptop:bg-yellow-400 p-6 rounded-3xl shadow-xl">
-        <span className="font-semibold text-3xl">Select Item</span>
+      <div className="dark:bg-black flex flex-col justify-between bg-white tablet:bg-teal-400 laptop:bg-yellow-400 p-6 rounded-3xl shadow-xl">
+        <span className="dark:text-white font-semibold text-3xl">
+          Select Item
+        </span>
         <ul>
           <div className="flex justify-between my-2">
-            <span className="text-gray-500">Grey Sofa</span>
-            <span className="font-semibold">$800</span>
+            <span className="dark:text-gray-100 text-gray-500">Grey Sofa</span>
+            <span className="dark:text-white font-semibold">$800</span>
           </div>
           <div className="flex justify-between my-2">
-            <span className="text-gray-500">Grey Sofa</span>
-            <span className="font-semibold">$800</span>
+            <span className="dark:text-gray100 text-gray-500">Grey Sofa</span>
+            <span className="dark:text-white font-semibold">$800</span>
           </div>
         </ul>
         <div className="flex justify-between mt-2 pt-2 border-t-2 border-dashed">
           <span>Total</span>
           <span className="font-semibold">$970</span>
         </div>
-        <button className="mt-5 p-3 bg-blue-500 rounded-xl text-white text-center mx-auto block w-3/4 hover:bg-teal-500 hover:text-black active:bg-yellow-500 focus:bg-red-500">
+        <button className="mt-5 p-3 bg-blue-500 dark:bg-black dark:border-white dark:border rounded-xl text-white text-center mx-auto block w-3/4 hover:bg-teal-500 hover:text-black dark:hover:bg-white dark:hover:text-black active:bg-yellow-500 focus:bg-red-500">
           Checkout
         </button>
       </div>

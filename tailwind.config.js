@@ -8,5 +8,6 @@ module.exports = {
       laptop: "1024px",
     },
   },
+  darkMode: "media", // "media" → system default, "class" → manual
   plugins: [],
 };
