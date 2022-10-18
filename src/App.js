@@ -28,7 +28,7 @@ function App() {
         </button>
       </div>
 
-      <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+      <div className="bg-white rounded-3xl shadow-xl overflow-hidden group">
         <div className="bg-blue-500 p-6 pb-14">
           <span className="text-white text-2xl">Profile</span>
         </div>
@@ -39,7 +39,7 @@ function App() {
               <span className="text-sm text-gray-500">Orders</span>
               <span className="font-medium">340</span>
             </div>
-            <div className="w-24 h-24 bg-red-400 rounded-full" />
+            <div className="w-24 h-24 bg-red-400 rounded-full group-hover:bg-yellow-300 transition-colors" />
             <div className="flex flex-col items-center">
               <span className="text-sm text-gray-500">Spent</span>
               <span className="font-medium">$2,310</span>
@@ -90,6 +90,49 @@ function App() {
           </div>
         </div>
       </div>
+
+      <form className="flex flex-col space-y-2 bg-blue-500 p-5 focus-within:bg-blue-200">
+        <input
+          type="text"
+          required
+          // invalid
+          placeholder="Username"
+          className="required:border-2 border-white-500 invalid:bg-red-300 valid:bg-teal-300"
+        />
+        <input
+          type="text"
+          required
+          placeholder="Username2"
+          className="placeholder-shown:bg-teal-300 placeholder:text-red-500"
+        />
+        <input
+          type="text"
+          disabled
+          placeholder="Username3"
+          className="disabled:opacity-0"
+        />
+        <input type="password" required placeholder="Password" />
+        <input type="submit" value="login" className="bg-white" />
+      </form>
+
+      <form className="flex flex-col p-5 space-y-2 bg-blue-500">
+        <input
+          type="text"
+          required
+          placeholder="username"
+          className="border p-1 border-gray-400 rounded-md peer"
+        />
+        <span className="hidden peer-invalid:block peer-invalid:text-red-500">
+          This input is invalid
+        </span>
+        <span className="hidden peer-valid:block peer-valid:text-teal-500">
+          Awesome!
+        </span>
+        <span className="hidden peer-hover:block peer-hover:text-amber-500">
+          Sleep!
+        </span>
+        <input type="submit" value="Login" className="bg-white" />
+      </form>
     </div>
   );
 }
